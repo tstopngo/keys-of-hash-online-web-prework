@@ -1,6 +1,13 @@
 class Hash
   def keys_of(*arguments)
     # code goes here
-    array = [] << hash.key(arguments)
+		array = []
+		self.each { |key, value|
+			if arguments.include?(value)
+				array << key
+			end
+		}
+		return array
+  end	  end
   end
 end
