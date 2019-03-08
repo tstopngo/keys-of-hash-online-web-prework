@@ -1,7 +1,7 @@
 class Hash
   def keys_of(*arguments)
     # code goes here
-    hash.key(arguments)
+    self.key(arguments)
     array = [] << hash.index(arguments)
   end
 end
